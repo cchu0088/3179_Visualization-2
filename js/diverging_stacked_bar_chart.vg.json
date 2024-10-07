@@ -11,7 +11,7 @@
     "transform": [
       {"filter": "datum.year == 2021"},
       {"calculate": "datum.Sex == 2 ? 'Female' : 'Male'", "as": "gender"},
-      {"calculate": "datum.Sex == 2 ? -datum['Age-standardized deaths from malignant neoplasms per 100,000 people'] : datum['Age-standardized deaths from malignant neoplasms per 100,000 people']", "as": "signed_people"}
+      {"calculate": "datum.Sex == 2 ? -datum['Age-standardized deaths from malignant neoplasms 100,000 people'] : datum['Age-standardized deaths from malignant neoplasms 100,000 people']", "as": "signed_people"}
     ],
     "width": 300,
     "height": 200,

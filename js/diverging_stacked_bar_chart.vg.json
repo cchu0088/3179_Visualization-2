@@ -1,134 +1,24 @@
-{
+
+
+
+
+  {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A diverging stacked bar chart for age-standardized deaths from malignant neoplasms in males and females per 100,000 people for the year 2021.",
     "data": {
-      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex.csv"
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex-reshaped.csv"
     },
     "transform": [
-      {"filter": "datum.Year == 2021"},
-      {"calculate": "'Male'", "as": "gender_male"},
-      {"calculate": "'Female'", "as": "gender_female"},
-      {"calculate": "-datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people']", "as": "negative_female_deaths"}
+      {"filter": "datum.year == 2021"},
+      {"calculate": "datum.Sex == 2 ? 'Female' : 'Male'", "as": "gender"},
+      {"calculate": "datum.Sex == 2 ? -datum['Age-standardized deaths from malignant neoplasms per 100,000 people'] : datum['Age-standardized deaths from malignant neoplasms per 100,000 people']", "as": "signed_people"}
     ],
     "width": 300,
-    "height": 600,
+    "height": 200,
     "mark": "bar",
     "encoding": {
       "y": {
         "field": "Entity",
-        "title": "Country",
-        "axis": {"labelFontSize": 12},
-        "sort": "-x"
-      },
-      "x": {
-        "title": "Age-standardized deaths per 100,000 people",
-        "axis": {"format": "s"}
-      },
-      "color": {
-        "field": "gender",
-        "scale": {"range": ["#675193", "#ca8861"]},
-        "legend": {"orient": "top", "title": null}
-      }
-    },
-    "layer": [
-      {
-        "mark": {"type": "bar", "tooltip": true},
-        "encoding": {
-          "x": {"field": "Age-standardized deaths from malignant neoplasms in males per 100,000 people", "aggregate": "sum"},
-          "color": {"datum": {"value": "Male"}}
-        }
-      },
-      {
-        "mark": {"type": "bar", "tooltip": true},
-        "encoding": {
-          "x": {"field": "negative_female_deaths", "aggregate": "sum"},
-          "color": {"datum": {"value": "Female"}}
-        }
-      }
-    ]
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A diverging stacked bar chart for age-standardized deaths from malignant neoplasms in males and females per 100,000 people for the year 2021.",
-    "data": {
-      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex.csv"
-    },
-    "transform": [
-      {"filter": "datum.Year == 2021"},
-      {"calculate": "'Male'", "as": "gender_male"},
-      {"calculate": "'Female'", "as": "gender_female"},
-      {"calculate": "-datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people']", "as": "negative_female_deaths"}
-    ],
-
-    "transform": [
-    {"filter": "datum.Year == 2021"},
-    {"calculate": "datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people'] * -1", "as": "negative_female_deaths"},
-    {"calculate": "datum['Age-standardized deaths from malignant neoplasms in males per 100,000 people']", "as": "male_deaths"}
-  ],
-
-    "transform": [
-      {"filter": "datum.year == 2000"},
-      {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"},
-      {"calculate": "datum.sex == 2 ? -datum.people : datum.people", "as": "signed_people"}
-    ],
-    "width": 300,
-    "height": 200,
-    "mark": "bar",
-    "encoding": {
-      "y": {
-        "field": "age",
-        "axis": null, "sort": "descending"
-      },
-      "x": {
-        "aggregate": "sum", "field": "signed_people",
-        "title": "population",
-        "axis": {"format": "s"}
-      },
-      "color": {
-        "field": "gender",
-        "scale": {"range": ["#675193", "#ca8861"]},
-        "legend": {"orient": "top", "title": null}
-      }
-    },
-    "config": {
-      "view": {"stroke": null},
-      "axis": {"grid": false}
-    }
-  }
-
-
-
-
-  {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A population pyramid for the US in 2000, created using stack. See https://vega.github.io/vega-lite/examples/concat_population_pyramid.html for a variant of this created using concat.",
-    "data": { "url": "data/population.json"},
-    "transform": [
-      {"filter": "datum.year == 2000"},
-      {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"},
-      {"calculate": "datum.sex == 2 ? -datum.people : datum.people", "as": "signed_people"}
-    ],
-    "width": 300,
-    "height": 200,
-    "mark": "bar",
-    "encoding": {
-      "y": {
-        "field": "age",
         "axis": null, "sort": "descending"
       },
       "x": {

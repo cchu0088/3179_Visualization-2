@@ -4,11 +4,9 @@
     "height": 400,
     "title": "Country vs Cancer Deaths per 10,000 Population in 2021",
     "data": {
-      "url": "https://raw.githubusercontent.com/cchu0088/3179_Homework_Assessment_10/main/data/cancer_deaths_with_continent.csv"
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer_deaths_with_continent.csv"
     },
     "transform": [
-      { "filter": "datum.Population > 0" },
-      { "filter": "datum['Total deaths from malignant neoplasms among both sexes'] > 0" },
       {
         "calculate": "datum['Total deaths from malignant neoplasms among both sexes']/datum.Population * 10000",
         "as": "Cases per 10,000 Population"

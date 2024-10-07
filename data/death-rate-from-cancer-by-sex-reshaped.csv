@@ -1,4 +1,4 @@
-Entity,Code,Year,"Age-standardized deaths from malignant neoplasms 100,000 people",Sex
+Entity,Code,Year,"Age standardized deaths from malignant neoplasms 100,000 people",Sex
 Albania,ALB,1987,127.92521,1
 Albania,ALB,1988,145.433,1
 Albania,ALB,1989,135.99101,1
@@ -2636,7 +2636,7 @@ Malaysia,MYS,2017,51.005527,1
 Malaysia,MYS,2018,61.104908,1
 Malaysia,MYS,2019,53.78899,1
 Malaysia,MYS,2020,56.906574,1
-Maldives,MDV,2000,0.0,1
+Maldives,MDV,2000,0,1
 Maldives,MDV,2001,44.45303,1
 Maldives,MDV,2002,44.19074,1
 Maldives,MDV,2003,27.543837,1
@@ -7412,7 +7412,7 @@ Malaysia,MYS,2017,45.726875,2
 Malaysia,MYS,2018,54.78195,2
 Malaysia,MYS,2019,49.734596,2
 Malaysia,MYS,2020,50.955505,2
-Maldives,MDV,2000,0.0,2
+Maldives,MDV,2000,0,2
 Maldives,MDV,2001,24.871485,2
 Maldives,MDV,2002,25.77641,2
 Maldives,MDV,2003,15.503741,2

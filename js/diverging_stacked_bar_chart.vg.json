@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A diverging stacked bar chart for age-standardized deaths from malignant neoplasms in males and females per 100,000 people for the year 2021.",
     "data": {
-      "url": "data/your_data.json"
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex.csv"
     },
     "transform": [
       {"filter": "datum.Year == 2021"},
@@ -11,7 +11,7 @@
       {"calculate": "-datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people']", "as": "negative_female_deaths"}
     ],
     "width": 300,
-    "height": 400,
+    "height": 600,
     "mark": "bar",
     "encoding": {
       "y": {
@@ -47,3 +47,67 @@
       }
     ]
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A diverging stacked bar chart for age-standardized deaths from malignant neoplasms in males and females per 100,000 people for the year 2021.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex.csv"
+    },
+    "transform": [
+      {"filter": "datum.Year == 2021"},
+      {"calculate": "'Male'", "as": "gender_male"},
+      {"calculate": "'Female'", "as": "gender_female"},
+      {"calculate": "-datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people']", "as": "negative_female_deaths"}
+    ],
+
+    "transform": [
+    {"filter": "datum.Year == 2021"},
+    {"calculate": "datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people'] * -1", "as": "negative_female_deaths"},
+    {"calculate": "datum['Age-standardized deaths from malignant neoplasms in males per 100,000 people']", "as": "male_deaths"}
+  ],
+
+    "transform": [
+      {"filter": "datum.year == 2000"},
+      {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"},
+      {"calculate": "datum.sex == 2 ? -datum.people : datum.people", "as": "signed_people"}
+    ],
+    "width": 300,
+    "height": 200,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "age",
+        "axis": null, "sort": "descending"
+      },
+      "x": {
+        "aggregate": "sum", "field": "signed_people",
+        "title": "population",
+        "axis": {"format": "s"}
+      },
+      "color": {
+        "field": "gender",
+        "scale": {"range": ["#675193", "#ca8861"]},
+        "legend": {"orient": "top", "title": null}
+      }
+    },
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+  }
+  

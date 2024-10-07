@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A diverging stacked bar chart for age-standardized deaths from malignant neoplasms in males and females per 100,000 people for the year 2021.",
+    "data": {
+      "url": "data/your_data.json"
+    },
+    "transform": [
+      {"filter": "datum.Year == 2021"},
+      {"calculate": "'Male'", "as": "gender_male"},
+      {"calculate": "'Female'", "as": "gender_female"},
+      {"calculate": "-datum['Age-standardized deaths from malignant neoplasms in females per 100,000 people']", "as": "negative_female_deaths"}
+    ],
+    "width": 300,
+    "height": 400,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "Entity",
+        "title": "Country",
+        "axis": {"labelFontSize": 12},
+        "sort": "-x"
+      },
+      "x": {
+        "title": "Age-standardized deaths per 100,000 people",
+        "axis": {"format": "s"}
+      },
+      "color": {
+        "field": "gender",
+        "scale": {"range": ["#675193", "#ca8861"]},
+        "legend": {"orient": "top", "title": null}
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar", "tooltip": true},
+        "encoding": {
+          "x": {"field": "Age-standardized deaths from malignant neoplasms in males per 100,000 people", "aggregate": "sum"},
+          "color": {"datum": {"value": "Male"}}
+        }
+      },
+      {
+        "mark": {"type": "bar", "tooltip": true},
+        "encoding": {
+          "x": {"field": "negative_female_deaths", "aggregate": "sum"},
+          "color": {"datum": {"value": "Female"}}
+        }
+      }
+    ]
+  }

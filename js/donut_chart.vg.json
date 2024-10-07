@@ -1,29 +1,38 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Total Cancer Deaths per 10,000 Population in 2021 by Country",
+    "title": "Total Cancer Deaths per 10,000 Population in 2021 by Continent",
     "data": {
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/continent_death_cancer.csv"
     },
     "transform": [
       {
-        "filter": "datum.Year == 2021" 
-      },
-      {
         "calculate": "datum['Total deaths from malignant neoplasms among both sexes']/datum.Population * 10000",
-        "as": "Deaths per 10,000 Population"
+        "as": "Cases per 10,000 Population"
       },
+      { "filter": "datum.Year == Year_selection" }
+    ],
+    "params": [
       {
-        "filter": "datum['Deaths per 10,000 Population'] > 0 && datum.Population > 0"  
+        "name": "Year_selection",
+        "value": 2021, 
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2021,
+          "step": 1,
+          "name": "Year: "
+        }
       }
     ],
+
     "mark": {
       "type": "arc",
-      "innerRadius": 100,  
-      "outerRadius": 200
+      "innerRadius": 50,  
+      "outerRadius": 100
     },
     "encoding": {
       "theta": {
-        "field": "Deaths per 10,000 Population",
+        "field": "Cases per 10,000 Population",
         "type": "quantitative",
         "title": "Total Cancer Deaths per 10,000 Population"
       },
@@ -31,15 +40,31 @@
         "field": "Continent",
         "type": "nominal",
         "title": "Continent",
-        "legend": {
-          "title": "Continent",
-          "orient": "right"
-        }
+        "scale": {
+          "domain": [
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "range": [
+            "#ff7f00",
+            "#984ea3",
+            "#e41a1c",
+            "#6cd4c5",
+            "#377eb8",
+            "#a65628"
+          ]
+        },
+        "legend": null
       },
+      "opacity": { "value": 0.8 },
       "tooltip": [
         { "field": "Continent", "type": "nominal", "title": "Continent" },
         { 
-          "field": "Deaths per 10,000 Population", 
+          "field": "Cases per 10,000 Population", 
           "type": "quantitative", 
           "title": "Cancer Deaths per 10,000 Population", 
           "format": ".2f" 

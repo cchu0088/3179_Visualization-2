@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Trends in Cancer Mortality Rates by Age Group in Malaysia (2000-2021)",
     "description": "Cancer Death Rates by Age Group in Malaysia (2000-2021)",
     "data": {
         "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rate-by-age-group-malaysia-new.csv"

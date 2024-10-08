@@ -4,6 +4,7 @@
 
   {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Cancer Deaths per 100,000 People by Gender Across Countries (2021)",
     "description": "A diverging stacked bar chart for age-standardized deaths from malignant neoplasms in males and females per 100,000 people for the year 2021.",
     "data": {
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex-reshaped.csv"

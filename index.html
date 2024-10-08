@@ -19,21 +19,136 @@
 
   <title>Deaths from Cancer</title>
 </head>
-
 <body>
   <div class="page">
 
-    <!-- Container for the Choropleth Map -->
-    <div class="pure-g">
-      <div class="pure-u-1-1">
-        <div id="choropleth_map"></div>
+
+  
+   <!-- pure grid group -->
+   <div class="pure-g">
+    <div class="pure-u-1-1">
+      <h1>Cancer Mortality: Global Overview and Focus on Malaysia (2000-2020)</h1>
+      <p>This page demonstrates how you can use pure.css grid for your layout.</p>
+    </div>
+  </div>
+  <!-- end pure grid group -->
+
+  <!-- Container for the Choropleth Map -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div id="choropleth_map" class="vis-container"></div>
+    </div>
+  </div>
+  
+  <div class="pure-u-1-1">
+    <p>
+      The choropleth map visualizes global cancer deaths from malignant neoplasms for the years 2000 to 2021. 
+      Each country is colored based on the number of cancer deaths per 10,000 population, allowing for an easy comparison of 
+      cancer mortality rates across different regions. The interactive year selection feature enables users to explore trends 
+      over time, highlighting variations in cancer death rates worldwide.
+    </p>
+  </div>
+
+
+
+  <!-- pure grid group -->
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <div class="description description-left">
+        <div id="scatter_plot" class="vis-container"></div>
       </div>
     </div>
 
-    <!-- Container for the Scatter Plot -->
+    <div class="pure-u-1-2">
+      <div id="donut_chart" class="vis-container"></div>
+    </div>
+  </div>
+  <!-- end pure grid group -->
+
+
+  <!-- pure grid group -->
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <div class="description description-left">
+        <div id="diverging_stacked_bar_chart" class="vis-container"></div>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right">
+        <h2>Diverging Stacked Bar Chart</h2>
+        <p>
+          The diverging stacked bar chart displays age-standardized deaths from malignant neoplasms in males and females 
+          per 100,000 people for the year 2021. It provides a clear visual distinction between male and female cancer death rates, 
+          with bars extending in opposite directions from a central axis. This allows for a direct comparison of cancer 
+          mortality between genders and highlights disparities in death rates across different countries.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end pure grid group -->
+
+
+
+
+  <!-- Container for the Choropleth Map -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div id="line_chart" class="vis-container"></div>
+    </div>
+  </div>
+  
+  <div class="pure-u-1-1">
+    <p>
+      The line chart illustrates cancer death rates in Malaysia by age group from 2000 to 2021. 
+      Each line represents a different age group, enabling viewers to track changes in cancer mortality over time. 
+      The interactive legend allows users to highlight specific age groups, facilitating a deeper understanding of 
+      how cancer death rates have evolved across different demographics in Malaysia over the years.
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    <!-- Container for Scatter Plot and Donut Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="scatter_plot"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="donut_chart"></div>
+      </div>
+    </div>
+
+    <!-- Container for Diverging Stacked Bar Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div id="scatter_plot"></div>
+        <div id="diverging_stacked_bar_chart"></div>
+      </div>
+    </div>
+
+    <!-- Container for Line Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="line_chart"></div>
       </div>
     </div>
 
@@ -49,6 +164,24 @@
     // Embed the Scatter Plot
     var scatterSpec = "js/scatter_plot.vg.json";
     vegaEmbed('#scatter_plot', scatterSpec).then(function(result) {
+      // Access the Vega view instance as result.view
+    }).catch(console.error);
+
+    // Embed the Donut Chart
+    var donutSpec = "js/donut_chart.vg.json";
+    vegaEmbed('#donut_chart', donutSpec).then(function(result) {
+      // Access the Vega view instance as result.view
+    }).catch(console.error);
+
+    // Embed the Diverging Stacked Bar Chart
+    var divergingStackedBarSpec = "js/diverging_stacked_bar_chart.vg.json";
+    vegaEmbed('#diverging_stacked_bar_chart', divergingStackedBarSpec).then(function(result) {
+      // Access the Vega view instance as result.view
+    }).catch(console.error);
+
+    // Embed the Line Chart
+    var lineSpec = "js/line_chart.vg.json";
+    vegaEmbed('#line_chart', lineSpec).then(function(result) {
       // Access the Vega view instance as result.view
     }).catch(console.error);
   </script>

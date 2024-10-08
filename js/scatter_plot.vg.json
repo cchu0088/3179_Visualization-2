@@ -77,7 +77,8 @@
                 "#377eb8",
                 "#a65628"
               ]
-            }
+            },
+            "legend":null
           },
           "opacity": { "value": 0.6 },
           "size": { 
@@ -114,8 +115,6 @@
         "encoding": {
           "text": { "field": "Entity", "type": "nominal" },
           "color": { "value": "black" },
-          "radius": {
-          "value": 120  },
           "opacity": {
             "condition": {
               "test": "datum['Entity'] == 'China' || datum['Entity'] == 'Malaysia' || datum['Entity'] == 'Brazil' || datum['Entity'] == 'Japan' || datum['Entity'] == 'New Zealand' || datum['Entity'] == 'Italy' || datum['Entity'] == 'Congo' || datum['Entity'] == 'United States of America' || datum['Entity'] == 'Monaco'",

@@ -4,6 +4,7 @@
     "data": {
         "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rate-by-age-group-malaysia-new.csv"
     },
+    "width":"container",
     "params": [
         {
             "name": "age_group_highlight",
@@ -34,7 +35,10 @@
                 "domain": ["less than 1", "1 to 19", "20 to 39", "40 to 59", "60 to 79", "over 80"],
                 "range": ["#189bcc", "#f42069", "#0e5d7a", "#f97012", "#f9e312", "#742790"]
             },
-            "legend": {"title": "Age Group"}
+            "legend": {
+                "title": "Age Group",
+                "orient": "top"              
+            }
         },
         "opacity"  : { 
         "condition"  : {"param": "age_group_highlight","value"  :  0.6  }, 

@@ -14,8 +14,8 @@
       {"calculate": "datum.Sex == 1 ? -datum['Age standardized deaths from malignant neoplasms 100,000 people'] : datum['Age standardized deaths from malignant neoplasms 100,000 people']", "as": "Cases per 100,000 Population"},
       {"calculate": "abs(datum['Cases per 100,000 Population'])", "as": "Positive Cases per 100,000 Population"} 
     ],
-    "width": 400,
-    "height": 600,
+    "width": 350,
+    "height": 610,
     "mark": "bar",
     "encoding": {
       "y": {
@@ -31,7 +31,7 @@
       },
       "color": {
         "field": "gender",
-        "scale": {"range": ["#675193", "#ca8861"]},
+        "scale": {"range": ["#2c6fc3", "#becc41"]},
         "legend": {"orient": "top", "title": null},
         "sort": ["Male", "Female"]
       },

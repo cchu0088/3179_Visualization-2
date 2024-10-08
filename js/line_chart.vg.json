@@ -4,6 +4,16 @@
     "data": {
         "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rate-by-age-group-malaysia-new.csv"
     },
+    "params": [
+        {
+            "name": "age_group_highlight",
+            "select": {
+                "type": "point",
+                "fields": ["Age"]
+            },
+            "bind": "legend"
+        }
+    ],
     "mark": "line",
     "encoding": {
         "x": {
@@ -14,14 +24,27 @@
         "y": {
             "field": "Deaths from malignant neoplasms per 100,000 people in, both sexes",
             "type": "quantitative",
-            "axis": {"title": "Deaths per 10,000"}
+            "axis": {"title": "Deaths per 100,000"},
+            "scale": { "type": "linear", "domain": [0, 1500] }  
         },
         "color": {
             "field": "Age",
             "type": "nominal",
-            "scale": {"scheme": "category10"},
+            "scale": {
+                "domain": ["less than 1", "1 to 19", "20 to 39", "40 to 59", "60 to 79", "over 80"],
+                "range": ["#189bcc", "#f42069", "#0e5d7a", "#f97012", "#f9e312", "#742790"]
+            },
             "legend": {"title": "Age Group"}
-        }
+        },
+        "opacity"  : { 
+        "condition"  : {"param": "age_group_highlight","value"  :  0.6  }, 
+        "value"  :  0.2 
+        },
+        "tooltip": [
+            {"field": "Year", "type": "ordinal", "title": "Year"},
+            {"field": "Age", "type": "nominal", "title": "Age Group"},
+            {"field": "Deaths from malignant neoplasms per 100,000 people in, both sexes", "type": "quantitative", "title": "Deaths per 100,000", "format": ".2f"}
+        ]
     },
     "transform": [
         {

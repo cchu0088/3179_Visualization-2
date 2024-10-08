@@ -10,30 +10,42 @@
     },
     "transform": [
       {"filter": "datum.Year == 2021"},
-      {"calculate": "datum.Sex == 2 ? 'Female' : 'Male'", "as": "gender"},
-      {"calculate": "datum.Sex == 2 ? -datum['Age standardized deaths from malignant neoplasms 100,000 people'] : datum['Age standardized deaths from malignant neoplasms 100,000 people']", "as": "signed_people"}
+      {"calculate": "datum.Sex == 1 ? 'Male' : 'Female'", "as": "gender"},
+      {"calculate": "datum.Sex == 1 ? -datum['Age standardized deaths from malignant neoplasms 100,000 people'] : datum['Age standardized deaths from malignant neoplasms 100,000 people']", "as": "Cases per 100,000 Population"},
+      {"calculate": "abs(datum['Cases per 100,000 Population'])", "as": "Positive Cases per 100,000 Population"} 
     ],
     "width": 400,
     "height": 600,
     "mark": "bar",
     "encoding": {
       "y": {
-        "field": "Entity"
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
       },
       "x": {
-        "aggregate": "sum", "field": "signed_people",
-        "title": "population",
-        "axis": {"format": "s"}
+        "aggregate": "sum", "field": "Cases per 100,000 Population",
+        "title": "Cancer deaths per 100,000 people",
+        "axis": {"format": "d", "labelExpr": "abs(datum.value)", "labelOverlap": true},
+        "scale": {"domain": [-250, 250]}
       },
       "color": {
         "field": "gender",
         "scale": {"range": ["#675193", "#ca8861"]},
-        "legend": {"orient": "top", "title": null}
-      }
+        "legend": {"orient": "top", "title": null},
+        "sort": ["Male", "Female"]
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {"field": "gender", "type": "nominal", "title": "Gender"},
+        {"field": "Positive Cases per 100,000 Population", "type": "quantitative", "title": "Deaths per 100,000", "format": ".2f" }
+      ] 
     },
     "config": {
-      "view": {"stroke": null},
-      "axis": {"grid": false}
+      "view": {"stroke": null}
     }
   }
   
+
+
+

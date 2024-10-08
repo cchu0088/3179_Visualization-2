@@ -1,6 +1,13 @@
-{
+
+
+
+
+
+  
+  {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Total Cancer Deaths per 10,000 Population in 2021 by Continent",
+    
     "data": {
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/continent_death_cancer.csv"
     },
@@ -24,42 +31,30 @@
         }
       }
     ],
-
-    "mark": {
-      "type": "arc",
-      "innerRadius": 50,  
-      "outerRadius": 100
-    },
     "encoding": {
-      "theta": {
-        "field": "Cases per 10,000 Population",
-        "type": "quantitative",
-        "title": "Total Cancer Deaths per 10,000 Population"
-      },
+      "theta": {"field": "Cases per 10,000 Population", "type": "quantitative", "stack": true},
       "color": {
-        "field": "Continent",
-        "type": "nominal",
-        "title": "Continent",
-        "scale": {
-          "domain": [
-            "North America",
-            "South America",
-            "Europe",
-            "Africa",
-            "Asia",
-            "Oceania"
-          ],
-          "range": [
-            "#ff7f00",
-            "#984ea3",
-            "#e41a1c",
-            "#6cd4c5",
-            "#377eb8",
-            "#a65628"
-          ]
-        },
-        "legend": null
-      },
+            "field": "Continent",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "North America",
+                "South America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+              ],
+              "range": [
+                "#ff7f00",
+                "#984ea3",
+                "#e41a1c",
+                "#6cd4c5",
+                "#377eb8",
+                "#a65628"
+              ]
+            }
+          },
       "opacity": { "value": 0.8 },
       "tooltip": [
         { "field": "Continent", "type": "nominal", "title": "Continent" },
@@ -82,5 +77,13 @@
           "format": ","
         }
       ]
-    }
+    },
+    "layer": [{
+      "mark": {"type": "arc", "outerRadius": 80}
+    }, {
+      "mark": {"type": "text", "radius": 105},
+      "encoding": {
+        "text": {"field": "Continent", "type": "nominal"}
+      }
+    }]
   }

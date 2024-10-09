@@ -75,9 +75,9 @@
     ]
   },
   "layer": [{
-    "mark": {"type": "arc", "outerRadius": 80}
+    "mark": {"type": "arc", "innerRadius": 50, "outerRadius": 100}
   }, {
-    "mark": {"type": "text", "radius": 105},
+    "mark": {"type": "text", "radius": 125},
     "encoding": {
       "text": {"field": "Continent", "type": "nominal"}
     }

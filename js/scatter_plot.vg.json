@@ -7,7 +7,6 @@
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer.csv"
     },
     "transform": [
-      
       { "filter": "Continent_selection == null || datum.Continent == Continent_selection" },
       { "filter": "datum.Year == Year_selection" }
     ],
@@ -46,8 +45,7 @@
       "y": {
         "field": "Death rate from malignant neoplasms among both sexes",
         "type": "quantitative",
-        "title": "Death rate from malignant neoplasms among both sexes",
-        "scale": { "type": "log"}  
+        "title": "Death rate from malignant neoplasms among both sexes"
       }
     },
     "layer": [
@@ -91,7 +89,6 @@
           "tooltip": [ 
             { "field": "Entity", "type": "nominal", "title": "Country" }, 
             { "field": "Death rate from malignant neoplasms among both sexes", "type": "quantitative", "title": "Total deaths from cancer", "format": "," }
-            
           ]
         }
       },

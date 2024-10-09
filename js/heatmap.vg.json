@@ -5,7 +5,7 @@
     "mark": "rect",
     "title": "Pollutants Emission per Population",
     "data": {
-      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rates-by-type-who-db.csv"
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rates-by-type-who-db-with-continent.csv"
     },
     "params": [
       {
@@ -85,16 +85,16 @@
     ],
     "transform": [
       {
-        "calculate": "datum[pollutants_selection]",
-        "as": "Pollutant Emission (tonnes)"
+        "calculate": "datum[cancer_selection]",
+        "as": "Cancer Death Rate (per 100,000 people)"
       },
       {
         "filter": "datum.Continent == continent_selection"
       },
       {
         "bin": true,
-        "field": "Pollutant Emission (tonnes)",
-        "as": "binned_pollutant_emission"
+        "field": "Cancer Death Rate (per 100,000 people)",
+        "as": "binned_cancer_death_rate"
       }
     ],
     "encoding": {
@@ -116,7 +116,7 @@
         }
       },
       "color": {
-        "field": "binned_pollutant_emission",
+        "field": "binned_cancer_death_rate",
         "type": "ordinal",
         "scale": {
           "scheme": "blues"
@@ -125,7 +125,7 @@
       "tooltip": [
         {"field": "Year", "type": "ordinal", "title": "Year"},
         {"field": "Entity", "type": "nominal", "title": "Country"},
-        {"field": "Pollutant Emission (tonnes)", "type": "quantitative", "title": "Pollutant Emission (tonnes)"}
+        {"field": "Cancer Death Rate (per 100,000 people)", "type": "quantitative", "title": "Cancer Death Rate (per 100,000 people)"}
       ]
     }
   }

@@ -1,131 +1,54 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 600,
-    "mark": "rect",
-    "title": "Pollutants Emission per Population",
-    "data": {
-      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rates-by-type-who-db-with-continent.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer_type_malaysia.csv"
+  },
+  "title": "Cancer Deaths by Cancer Type in Malaysia (2000 - 2021)",
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "step": 20
     },
-    "params": [
-      {
-        "name": "cancer_selection",
-        "bind": {
-          "input": "select",
-          "options": [
-            "Age-standardized deaths from bladder cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from colon and rectum cancers in both sexes per 100,000 people",
-            "Age-standardized deaths from pancreas cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from breast cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from corpus uteri cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from kidney cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from oesophagus cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from melanoma and other skin cancers in both sexes per 100,000 people",
-            "Age-standardized deaths from prostate cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from thyroid cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from testicular cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from trachea, bronchus, lung cancers in both sexes per 100,000 people",
-            "Age-standardized deaths from mouth and oropharynx cancers in both sexes per 100,000 people",
-            "Age-standardized deaths from ovary cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from larynx cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from gallbladder and biliary tract cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from cervix uteri cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from stomach cancer in both sexes per 100,000 people",
-            "Age-standardized deaths from brain and nervous system cancers in both sexes per 100,000 people"
-          ],
-          "labels": [
-            "bladder cancer",
-            "colon and rectum cancers",
-            "pancreas cancer",
-            "breast cancer",
-            "corpus uteri cancer",
-            "kidney cancer",
-            "oesophagus cancer",
-            "melanoma and other",
-            "prostate cancer",
-            "thyroid cancer",
-            "testicular cancer",
-            "trachea, bronchus, lung cancers",
-            "mouth and oropharynx cancers",
-            "ovary cancer",
-            "larynx cancer",
-            "gallbladder and biliary tract cancer",
-            "cervix uteri cancer",
-            "stomach cancer",
-            "brain and nervous system cancers"
-          ],
-          "name": "Cancer Selection: "
-        },
-        "value": "Age-standardized deaths from bladder cancer in both sexes per 100,000 people"
-      },
-      {
-        "name": "continent_selection",
-        "bind": {
-          "input": "select",
-          "options": [
-            "North America",
-            "South America",
-            "Europe",
-            "Africa",
-            "Asia",
-            "Oceania"
-          ],
-          "labels": [
-            "North America",
-            "South America",
-            "Europe",
-            "Africa",
-            "Asia",
-            "Oceania"
-          ],
-          "name": "Continent Selection: "
-        },
-        "value": "Asia"
-      }
-    ],
-    "transform": [
-      {
-        "calculate": "datum[cancer_selection]",
-        "as": "Cancer Death Rate (per 100,000 people)"
-      },
-      {
-        "filter": "datum.Continent == continent_selection"
-      },
-      {
-        "bin": true,
-        "field": "Cancer Death Rate (per 100,000 people)",
-        "as": "binned_cancer_death_rate"
-      }
-    ],
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "quantitative",
-        "bin": {"maxbins": 80},
-        "axis": {
-          "grid": true,
-          "gridOpacity": 0.5
-        }
-      },
-      "y": {
-        "field": "Entity",
-        "type": "nominal",
-        "axis": {
-          "grid": true,
-          "gridOpacity": 0.5
-        }
-      },
-      "color": {
-        "field": "binned_cancer_death_rate",
-        "type": "ordinal",
-        "scale": {
-          "scheme": "blues"
-        }
-      },
-      "tooltip": [
-        {"field": "Year", "type": "ordinal", "title": "Year"},
-        {"field": "Entity", "type": "nominal", "title": "Country"},
-        {"field": "Cancer Death Rate (per 100,000 people)", "type": "quantitative", "title": "Cancer Death Rate (per 100,000 people)"}
-      ]
+    "axis": {
+      "domain": false
     }
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "white",  
+    "strokeWidth": 0.3  
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "Cancer Type",
+      "type": "nominal",
+      "title": "Cancer Type"
+    },
+    "color": {
+      "field": "Age-standardized deaths in both sexes per 100,000 people",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0, 8],  
+        "scheme": "redpurple" 
+      },
+      "legend": {
+        "title": "Deaths per 100,000"
+      }
+    },
+    "tooltip": [
+      { "field": "Year", "type": "ordinal", "title": "Year" },
+      { "field": "Cancer Type", "type": "nominal", "title": "Cancer Type" },
+      { "field": "Age-standardized deaths in both sexes per 100,000 people", "type": "quantitative", "title": "Deaths per 100,000" }
+    ]
   }
+}

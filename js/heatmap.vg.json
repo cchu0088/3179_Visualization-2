@@ -5,32 +5,58 @@
     "mark": "rect",
     "title": "Pollutants Emission per Population",
     "data": {
-      "url": "https://raw.githubusercontent.com/JingXuen/FIT3179_Data-Visualization-2/refs/heads/main/data/pollutants_emission_with_continents_1922_2022.csv"
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rates-by-type-who-db.csv"
     },
     "params": [
       {
-        "name": "pollutants_selection",
+        "name": "cancer_selection",
         "bind": {
           "input": "select",
           "options": [
-            "Nitrogen oxide (NOx)",
-            "Sulphur dioxide (SO₂) emissions",
-            "Carbon monoxide (CO) emissions",
-            "Black carbon (BC) emissions",
-            "Ammonia (NH₃) emissions",
-            "Non-methane volatile organic compounds (NMVOC) emissions"
+            "Age-standardized deaths from bladder cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from colon and rectum cancers in both sexes per 100,000 people",
+            "Age-standardized deaths from pancreas cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from breast cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from corpus uteri cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from kidney cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from oesophagus cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from melanoma and other skin cancers in both sexes per 100,000 people",
+            "Age-standardized deaths from prostate cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from thyroid cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from testicular cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from trachea, bronchus, lung cancers in both sexes per 100,000 people",
+            "Age-standardized deaths from mouth and oropharynx cancers in both sexes per 100,000 people",
+            "Age-standardized deaths from ovary cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from larynx cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from gallbladder and biliary tract cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from cervix uteri cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from stomach cancer in both sexes per 100,000 people",
+            "Age-standardized deaths from brain and nervous system cancers in both sexes per 100,000 people"
           ],
           "labels": [
-            "Nitrogen oxide (NOx)",
-            "Sulphur dioxide (SO₂)",
-            "Carbon monoxide (CO)",
-            "Black carbon (BC)",
-            "Ammonia (NH₃)",
-            "Non-methane volatile organic compounds (NMVOC)"
+            "bladder cancer",
+            "colon and rectum cancers",
+            "pancreas cancer",
+            "breast cancer",
+            "corpus uteri cancer",
+            "kidney cancer",
+            "oesophagus cancer",
+            "melanoma and other",
+            "prostate cancer",
+            "thyroid cancer",
+            "testicular cancer",
+            "trachea, bronchus, lung cancers",
+            "mouth and oropharynx cancers",
+            "ovary cancer",
+            "larynx cancer",
+            "gallbladder and biliary tract cancer",
+            "cervix uteri cancer",
+            "stomach cancer",
+            "brain and nervous system cancers"
           ],
-          "name": "Pollutant Selection: "
+          "name": "Cancer Selection: "
         },
-        "value": "Nitrogen oxide (NOx)"
+        "value": "Age-standardized deaths from bladder cancer in both sexes per 100,000 people"
       },
       {
         "name": "continent_selection",

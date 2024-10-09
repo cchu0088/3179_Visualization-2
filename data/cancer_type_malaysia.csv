@@ -1,0 +1,441 @@
+Entity,Code,Year,Cancer Type,"Age-standardized deaths in both sexes per 100,000 people"
+Malaysia,MYS,2000,bladder cancer,0.6105167
+Malaysia,MYS,2000,colon and rectum cancers,3.4853137
+Malaysia,MYS,2000,pancreas cancer,0.81863433
+Malaysia,MYS,2000,breast cancer,2.4431665
+Malaysia,MYS,2000,corpus uteri cancer,0.3154238
+Malaysia,MYS,2000,kidney cancer,0.25673094
+Malaysia,MYS,2000,oesophagus cancer,0.887565
+Malaysia,MYS,2000,melanoma and other,0.21076646
+Malaysia,MYS,2000,prostate cancer,0.58493274
+Malaysia,MYS,2000,thyroid cancer,0.34918967
+Malaysia,MYS,2000,testicular cancer,0.02620221
+Malaysia,MYS,2000,"trachea, bronchus, lung cancers",8.135024
+Malaysia,MYS,2000,mouth and oropharynx cancers,2.460429
+Malaysia,MYS,2000,ovary cancer,0.826961
+Malaysia,MYS,2000,larynx cancer,0.32023865
+Malaysia,MYS,2000,gallbladder and biliary tract cancer,0.22197418
+Malaysia,MYS,2000,cervix uteri cancer,1.0027245
+Malaysia,MYS,2000,stomach cancer,2.0926876
+Malaysia,MYS,2000,brain and nervous system cancers,0.404945
+Malaysia,MYS,2000,liver cancer,3.7417846
+Malaysia,MYS,2001,bladder cancer,0.5368365
+Malaysia,MYS,2001,colon and rectum cancers,3.4164436
+Malaysia,MYS,2001,pancreas cancer,1.1474799
+Malaysia,MYS,2001,breast cancer,2.671512
+Malaysia,MYS,2001,corpus uteri cancer,0.26586235
+Malaysia,MYS,2001,kidney cancer,0.4201592
+Malaysia,MYS,2001,oesophagus cancer,0.66693985
+Malaysia,MYS,2001,melanoma and other,0.19231944
+Malaysia,MYS,2001,prostate cancer,0.6572461
+Malaysia,MYS,2001,thyroid cancer,0.3354585
+Malaysia,MYS,2001,testicular cancer,0.05079669
+Malaysia,MYS,2001,"trachea, bronchus, lung cancers",8.217258
+Malaysia,MYS,2001,mouth and oropharynx cancers,2.1849225
+Malaysia,MYS,2001,ovary cancer,0.75137424
+Malaysia,MYS,2001,larynx cancer,0.2572352
+Malaysia,MYS,2001,gallbladder and biliary tract cancer,0.24767306
+Malaysia,MYS,2001,cervix uteri cancer,1.2133571
+Malaysia,MYS,2001,stomach cancer,1.9203514
+Malaysia,MYS,2001,brain and nervous system cancers,0.5892169
+Malaysia,MYS,2001,liver cancer,3.503003
+Malaysia,MYS,2002,bladder cancer,0.3931502
+Malaysia,MYS,2002,colon and rectum cancers,3.6553776
+Malaysia,MYS,2002,pancreas cancer,1.0610464
+Malaysia,MYS,2002,breast cancer,2.8422167
+Malaysia,MYS,2002,corpus uteri cancer,0.39035174
+Malaysia,MYS,2002,kidney cancer,0.43018708
+Malaysia,MYS,2002,oesophagus cancer,0.7554113
+Malaysia,MYS,2002,melanoma and other,0.25542045
+Malaysia,MYS,2002,prostate cancer,0.7431325
+Malaysia,MYS,2002,thyroid cancer,0.37855458
+Malaysia,MYS,2002,testicular cancer,0.03850397
+Malaysia,MYS,2002,"trachea, bronchus, lung cancers",8.504701
+Malaysia,MYS,2002,mouth and oropharynx cancers,2.328104
+Malaysia,MYS,2002,ovary cancer,0.8084821
+Malaysia,MYS,2002,larynx cancer,0.37241215
+Malaysia,MYS,2002,gallbladder and biliary tract cancer,0.28265956
+Malaysia,MYS,2002,cervix uteri cancer,1.0121486
+Malaysia,MYS,2002,stomach cancer,2.077396
+Malaysia,MYS,2002,brain and nervous system cancers,0.5676542
+Malaysia,MYS,2002,liver cancer,3.5325198
+Malaysia,MYS,2003,bladder cancer,0.39290556
+Malaysia,MYS,2003,colon and rectum cancers,3.9379199
+Malaysia,MYS,2003,pancreas cancer,1.1238928
+Malaysia,MYS,2003,breast cancer,3.0181
+Malaysia,MYS,2003,corpus uteri cancer,0.40286234
+Malaysia,MYS,2003,kidney cancer,0.48453277
+Malaysia,MYS,2003,oesophagus cancer,0.74708164
+Malaysia,MYS,2003,melanoma and other,0.24296571
+Malaysia,MYS,2003,prostate cancer,0.7398791
+Malaysia,MYS,2003,thyroid cancer,0.39869088
+Malaysia,MYS,2003,testicular cancer,0.06327179
+Malaysia,MYS,2003,"trachea, bronchus, lung cancers",8.24972
+Malaysia,MYS,2003,mouth and oropharynx cancers,2.440795
+Malaysia,MYS,2003,ovary cancer,0.98221433
+Malaysia,MYS,2003,larynx cancer,0.21918851
+Malaysia,MYS,2003,gallbladder and biliary tract cancer,0.25422883
+Malaysia,MYS,2003,cervix uteri cancer,1.1183949
+Malaysia,MYS,2003,stomach cancer,2.1727238
+Malaysia,MYS,2003,brain and nervous system cancers,0.53600484
+Malaysia,MYS,2003,liver cancer,3.5130236
+Malaysia,MYS,2004,bladder cancer,0.6263024
+Malaysia,MYS,2004,colon and rectum cancers,3.9507442
+Malaysia,MYS,2004,pancreas cancer,1.2212417
+Malaysia,MYS,2004,breast cancer,3.2987192
+Malaysia,MYS,2004,corpus uteri cancer,0.37129945
+Malaysia,MYS,2004,kidney cancer,0.48224938
+Malaysia,MYS,2004,oesophagus cancer,0.8343849
+Malaysia,MYS,2004,melanoma and other,0.259325
+Malaysia,MYS,2004,prostate cancer,0.8379075
+Malaysia,MYS,2004,thyroid cancer,0.4308155
+Malaysia,MYS,2004,testicular cancer,0.06406659
+Malaysia,MYS,2004,"trachea, bronchus, lung cancers",8.627332
+Malaysia,MYS,2004,mouth and oropharynx cancers,2.4686635
+Malaysia,MYS,2004,ovary cancer,0.9889239
+Malaysia,MYS,2004,larynx cancer,0.3308816
+Malaysia,MYS,2004,gallbladder and biliary tract cancer,0.1857212
+Malaysia,MYS,2004,cervix uteri cancer,1.166817
+Malaysia,MYS,2004,stomach cancer,1.9694736
+Malaysia,MYS,2004,brain and nervous system cancers,0.52850825
+Malaysia,MYS,2004,liver cancer,3.7935493
+Malaysia,MYS,2005,bladder cancer,0.48679596
+Malaysia,MYS,2005,colon and rectum cancers,3.8462906
+Malaysia,MYS,2005,pancreas cancer,1.1649904
+Malaysia,MYS,2005,breast cancer,3.5285592
+Malaysia,MYS,2005,corpus uteri cancer,0.38726506
+Malaysia,MYS,2005,kidney cancer,0.5016205
+Malaysia,MYS,2005,oesophagus cancer,0.7744239
+Malaysia,MYS,2005,melanoma and other,0.40631726
+Malaysia,MYS,2005,prostate cancer,0.7654697
+Malaysia,MYS,2005,thyroid cancer,0.3498232
+Malaysia,MYS,2005,testicular cancer,0.04609606
+Malaysia,MYS,2005,"trachea, bronchus, lung cancers",8.964529
+Malaysia,MYS,2005,mouth and oropharynx cancers,2.3101416
+Malaysia,MYS,2005,ovary cancer,0.9647795
+Malaysia,MYS,2005,larynx cancer,0.2667807
+Malaysia,MYS,2005,gallbladder and biliary tract cancer,0.37047213
+Malaysia,MYS,2005,cervix uteri cancer,1.1441009
+Malaysia,MYS,2005,stomach cancer,2.0629716
+Malaysia,MYS,2005,brain and nervous system cancers,0.53588074
+Malaysia,MYS,2005,liver cancer,3.3083007
+Malaysia,MYS,2006,bladder cancer,0.6061855
+Malaysia,MYS,2006,colon and rectum cancers,4.0141854
+Malaysia,MYS,2006,pancreas cancer,1.1558572
+Malaysia,MYS,2006,breast cancer,3.7150886
+Malaysia,MYS,2006,corpus uteri cancer,0.3263207
+Malaysia,MYS,2006,kidney cancer,0.4196411
+Malaysia,MYS,2006,oesophagus cancer,0.83428687
+Malaysia,MYS,2006,melanoma and other,0.28894076
+Malaysia,MYS,2006,prostate cancer,0.88790315
+Malaysia,MYS,2006,thyroid cancer,0.39232895
+Malaysia,MYS,2006,testicular cancer,0.06121633
+Malaysia,MYS,2006,"trachea, bronchus, lung cancers",8.697799
+Malaysia,MYS,2006,mouth and oropharynx cancers,2.284136
+Malaysia,MYS,2006,ovary cancer,1.0728241
+Malaysia,MYS,2006,larynx cancer,0.2376518
+Malaysia,MYS,2006,gallbladder and biliary tract cancer,0.3129482
+Malaysia,MYS,2006,cervix uteri cancer,1.1131701
+Malaysia,MYS,2006,stomach cancer,1.9392301
+Malaysia,MYS,2006,brain and nervous system cancers,0.52799755
+Malaysia,MYS,2006,liver cancer,3.795074
+Malaysia,MYS,2007,bladder cancer,0.5316377
+Malaysia,MYS,2007,colon and rectum cancers,4.3758693
+Malaysia,MYS,2007,pancreas cancer,1.4123901
+Malaysia,MYS,2007,breast cancer,3.9035127
+Malaysia,MYS,2007,corpus uteri cancer,0.5039616
+Malaysia,MYS,2007,kidney cancer,0.610105
+Malaysia,MYS,2007,oesophagus cancer,0.7764133
+Malaysia,MYS,2007,melanoma and other,0.2768741
+Malaysia,MYS,2007,prostate cancer,1.0618631
+Malaysia,MYS,2007,thyroid cancer,0.4903651
+Malaysia,MYS,2007,testicular cancer,0.05547096
+Malaysia,MYS,2007,"trachea, bronchus, lung cancers",8.867546
+Malaysia,MYS,2007,mouth and oropharynx cancers,2.3212903
+Malaysia,MYS,2007,ovary cancer,1.0595868
+Malaysia,MYS,2007,larynx cancer,0.34242132
+Malaysia,MYS,2007,gallbladder and biliary tract cancer,0.37826723
+Malaysia,MYS,2007,cervix uteri cancer,1.2728077
+Malaysia,MYS,2007,stomach cancer,1.9461343
+Malaysia,MYS,2007,brain and nervous system cancers,0.5831814
+Malaysia,MYS,2007,liver cancer,3.772274
+Malaysia,MYS,2008,bladder cancer,0.5379629
+Malaysia,MYS,2008,colon and rectum cancers,4.6306844
+Malaysia,MYS,2008,pancreas cancer,1.4836019
+Malaysia,MYS,2008,breast cancer,4.0243793
+Malaysia,MYS,2008,corpus uteri cancer,0.44030714
+Malaysia,MYS,2008,kidney cancer,0.4843815
+Malaysia,MYS,2008,oesophagus cancer,0.733691
+Malaysia,MYS,2008,melanoma and other,0.33498073
+Malaysia,MYS,2008,prostate cancer,0.8506037
+Malaysia,MYS,2008,thyroid cancer,0.4205322
+Malaysia,MYS,2008,testicular cancer,0.06732585
+Malaysia,MYS,2008,"trachea, bronchus, lung cancers",9.104584
+Malaysia,MYS,2008,mouth and oropharynx cancers,2.4018056
+Malaysia,MYS,2008,ovary cancer,1.1101635
+Malaysia,MYS,2008,larynx cancer,0.27243793
+Malaysia,MYS,2008,gallbladder and biliary tract cancer,0.32551083
+Malaysia,MYS,2008,cervix uteri cancer,1.2383146
+Malaysia,MYS,2008,stomach cancer,2.0949774
+Malaysia,MYS,2008,brain and nervous system cancers,0.56249535
+Malaysia,MYS,2008,liver cancer,3.694054
+Malaysia,MYS,2009,bladder cancer,0.55721104
+Malaysia,MYS,2009,colon and rectum cancers,4.3405633
+Malaysia,MYS,2009,pancreas cancer,1.3656744
+Malaysia,MYS,2009,breast cancer,3.8534293
+Malaysia,MYS,2009,corpus uteri cancer,0.4581805
+Malaysia,MYS,2009,kidney cancer,0.4320984
+Malaysia,MYS,2009,oesophagus cancer,0.5763433
+Malaysia,MYS,2009,melanoma and other,0.3339879
+Malaysia,MYS,2009,prostate cancer,0.9842706
+Malaysia,MYS,2009,thyroid cancer,0.44016793
+Malaysia,MYS,2009,testicular cancer,0.04142194
+Malaysia,MYS,2009,"trachea, bronchus, lung cancers",7.8176913
+Malaysia,MYS,2009,mouth and oropharynx cancers,2.2262616
+Malaysia,MYS,2009,ovary cancer,1.1127665
+Malaysia,MYS,2009,larynx cancer,0.26222202
+Malaysia,MYS,2009,gallbladder and biliary tract cancer,0.32802445
+Malaysia,MYS,2009,cervix uteri cancer,1.1820614
+Malaysia,MYS,2009,stomach cancer,1.6705972
+Malaysia,MYS,2009,brain and nervous system cancers,0.37171304
+Malaysia,MYS,2009,liver cancer,3.42536
+Malaysia,MYS,2010,bladder cancer,0.647982
+Malaysia,MYS,2010,colon and rectum cancers,3.9534104
+Malaysia,MYS,2010,pancreas cancer,1.4456645
+Malaysia,MYS,2010,breast cancer,3.726247
+Malaysia,MYS,2010,corpus uteri cancer,0.44688374
+Malaysia,MYS,2010,kidney cancer,0.6079365
+Malaysia,MYS,2010,oesophagus cancer,0.6354889
+Malaysia,MYS,2010,melanoma and other,0.3161539
+Malaysia,MYS,2010,prostate cancer,0.8631042
+Malaysia,MYS,2010,thyroid cancer,0.3915771
+Malaysia,MYS,2010,testicular cancer,0.04510488
+Malaysia,MYS,2010,"trachea, bronchus, lung cancers",7.6453733
+Malaysia,MYS,2010,mouth and oropharynx cancers,2.1105251
+Malaysia,MYS,2010,ovary cancer,0.98847
+Malaysia,MYS,2010,larynx cancer,0.3082339
+Malaysia,MYS,2010,gallbladder and biliary tract cancer,0.3584547
+Malaysia,MYS,2010,cervix uteri cancer,1.0180736
+Malaysia,MYS,2010,stomach cancer,1.5902206
+Malaysia,MYS,2010,brain and nervous system cancers,0.44744563
+Malaysia,MYS,2010,liver cancer,3.484681
+Malaysia,MYS,2011,bladder cancer,0.5814147
+Malaysia,MYS,2011,colon and rectum cancers,4.0716853
+Malaysia,MYS,2011,pancreas cancer,1.3571199
+Malaysia,MYS,2011,breast cancer,3.7936337
+Malaysia,MYS,2011,corpus uteri cancer,0.52313495
+Malaysia,MYS,2011,kidney cancer,0.53851587
+Malaysia,MYS,2011,oesophagus cancer,0.51725817
+Malaysia,MYS,2011,melanoma and other,0.33178222
+Malaysia,MYS,2011,prostate cancer,0.9652074
+Malaysia,MYS,2011,thyroid cancer,0.37934884
+Malaysia,MYS,2011,testicular cancer,0.05621947
+Malaysia,MYS,2011,"trachea, bronchus, lung cancers",7.65738
+Malaysia,MYS,2011,mouth and oropharynx cancers,2.1608512
+Malaysia,MYS,2011,ovary cancer,1.0693704
+Malaysia,MYS,2011,larynx cancer,0.26916447
+Malaysia,MYS,2011,gallbladder and biliary tract cancer,0.37347174
+Malaysia,MYS,2011,cervix uteri cancer,1.0901127
+Malaysia,MYS,2011,stomach cancer,1.7775038
+Malaysia,MYS,2011,brain and nervous system cancers,0.4943088
+Malaysia,MYS,2011,liver cancer,3.7939296
+Malaysia,MYS,2012,bladder cancer,0.48868525
+Malaysia,MYS,2012,colon and rectum cancers,4.22591
+Malaysia,MYS,2012,pancreas cancer,1.3192651
+Malaysia,MYS,2012,breast cancer,3.9500022
+Malaysia,MYS,2012,corpus uteri cancer,0.51104885
+Malaysia,MYS,2012,kidney cancer,0.5340616
+Malaysia,MYS,2012,oesophagus cancer,0.5524429
+Malaysia,MYS,2012,melanoma and other,0.3566204
+Malaysia,MYS,2012,prostate cancer,0.91795385
+Malaysia,MYS,2012,thyroid cancer,0
+Malaysia,MYS,2012,testicular cancer,0.06847457
+Malaysia,MYS,2012,"trachea, bronchus, lung cancers",7.778577
+Malaysia,MYS,2012,mouth and oropharynx cancers,1.7528834
+Malaysia,MYS,2012,ovary cancer,1.0787294
+Malaysia,MYS,2012,larynx cancer,0.2749723
+Malaysia,MYS,2012,gallbladder and biliary tract cancer,0.32644865
+Malaysia,MYS,2012,cervix uteri cancer,1.0421776
+Malaysia,MYS,2012,stomach cancer,1.5983534
+Malaysia,MYS,2012,brain and nervous system cancers,0.84151834
+Malaysia,MYS,2012,liver cancer,3.5386913
+Malaysia,MYS,2013,bladder cancer,0.5238172
+Malaysia,MYS,2013,colon and rectum cancers,3.9274616
+Malaysia,MYS,2013,pancreas cancer,1.4571211
+Malaysia,MYS,2013,breast cancer,4.020472
+Malaysia,MYS,2013,corpus uteri cancer,0.56235087
+Malaysia,MYS,2013,kidney cancer,0.5882648
+Malaysia,MYS,2013,oesophagus cancer,0.5215512
+Malaysia,MYS,2013,melanoma and other,0.3404779
+Malaysia,MYS,2013,prostate cancer,0.9527333
+Malaysia,MYS,2013,thyroid cancer,0.43087825
+Malaysia,MYS,2013,testicular cancer,0.05279599
+Malaysia,MYS,2013,"trachea, bronchus, lung cancers",8.004401
+Malaysia,MYS,2013,mouth and oropharynx cancers,1.8057591
+Malaysia,MYS,2013,ovary cancer,1.0089238
+Malaysia,MYS,2013,larynx cancer,0.2605291
+Malaysia,MYS,2013,gallbladder and biliary tract cancer,0.35360926
+Malaysia,MYS,2013,cervix uteri cancer,1.0363239
+Malaysia,MYS,2013,stomach cancer,1.4403324
+Malaysia,MYS,2013,brain and nervous system cancers,0.44120562
+Malaysia,MYS,2013,liver cancer,3.809826
+Malaysia,MYS,2014,bladder cancer,0.54043
+Malaysia,MYS,2014,colon and rectum cancers,3.9026084
+Malaysia,MYS,2014,pancreas cancer,1.4468018
+Malaysia,MYS,2014,breast cancer,4.005081
+Malaysia,MYS,2014,corpus uteri cancer,0.53792614
+Malaysia,MYS,2014,kidney cancer,0.7200025
+Malaysia,MYS,2014,oesophagus cancer,0.50475925
+Malaysia,MYS,2014,melanoma and other,0.38396943
+Malaysia,MYS,2014,prostate cancer,1.2007426
+Malaysia,MYS,2014,thyroid cancer,0.36730567
+Malaysia,MYS,2014,testicular cancer,0.07925324
+Malaysia,MYS,2014,"trachea, bronchus, lung cancers",7.4007716
+Malaysia,MYS,2014,mouth and oropharynx cancers,1.8302805
+Malaysia,MYS,2014,ovary cancer,1.0920297
+Malaysia,MYS,2014,larynx cancer,0.24035572
+Malaysia,MYS,2014,gallbladder and biliary tract cancer,0.43975058
+Malaysia,MYS,2014,cervix uteri cancer,0.99192894
+Malaysia,MYS,2014,stomach cancer,1.505305
+Malaysia,MYS,2014,brain and nervous system cancers,0.49602303
+Malaysia,MYS,2014,liver cancer,3.7538476
+Malaysia,MYS,2015,bladder cancer,0.5099508
+Malaysia,MYS,2015,colon and rectum cancers,4.3239503
+Malaysia,MYS,2015,pancreas cancer,1.5636901
+Malaysia,MYS,2015,breast cancer,3.9454684
+Malaysia,MYS,2015,corpus uteri cancer,0.63526464
+Malaysia,MYS,2015,kidney cancer,0.6120123
+Malaysia,MYS,2015,oesophagus cancer,0.6033645
+Malaysia,MYS,2015,melanoma and other,0.38225117
+Malaysia,MYS,2015,prostate cancer,1.0213871
+Malaysia,MYS,2015,thyroid cancer,0.5024055
+Malaysia,MYS,2015,testicular cancer,0.09553917
+Malaysia,MYS,2015,"trachea, bronchus, lung cancers",7.451301
+Malaysia,MYS,2015,mouth and oropharynx cancers,1.9609293
+Malaysia,MYS,2015,ovary cancer,1.0426315
+Malaysia,MYS,2015,larynx cancer,0.24251992
+Malaysia,MYS,2015,gallbladder and biliary tract cancer,0.38905427
+Malaysia,MYS,2015,cervix uteri cancer,0.99857175
+Malaysia,MYS,2015,stomach cancer,1.271092
+Malaysia,MYS,2015,brain and nervous system cancers,0.5343427
+Malaysia,MYS,2015,liver cancer,3.7617676
+Malaysia,MYS,2016,bladder cancer,0.62785643
+Malaysia,MYS,2016,colon and rectum cancers,4.5613217
+Malaysia,MYS,2016,pancreas cancer,1.3395954
+Malaysia,MYS,2016,breast cancer,4.5221567
+Malaysia,MYS,2016,corpus uteri cancer,0.6902602
+Malaysia,MYS,2016,kidney cancer,0.64573085
+Malaysia,MYS,2016,oesophagus cancer,0.5353449
+Malaysia,MYS,2016,melanoma and other,0.41056138
+Malaysia,MYS,2016,prostate cancer,1.2379851
+Malaysia,MYS,2016,thyroid cancer,0.42570513
+Malaysia,MYS,2016,testicular cancer,0.08087056
+Malaysia,MYS,2016,"trachea, bronchus, lung cancers",7.2709002
+Malaysia,MYS,2016,mouth and oropharynx cancers,1.9405288
+Malaysia,MYS,2016,ovary cancer,1.1159266
+Malaysia,MYS,2016,larynx cancer,0.2017458
+Malaysia,MYS,2016,gallbladder and biliary tract cancer,0.47434068
+Malaysia,MYS,2016,cervix uteri cancer,0.91396797
+Malaysia,MYS,2016,stomach cancer,1.2541813
+Malaysia,MYS,2016,brain and nervous system cancers,0.4548353
+Malaysia,MYS,2016,liver cancer,3.8548043
+Malaysia,MYS,2017,bladder cancer,0.66919774
+Malaysia,MYS,2017,colon and rectum cancers,5.7530136
+Malaysia,MYS,2017,pancreas cancer,1.7640603
+Malaysia,MYS,2017,breast cancer,5.8674893
+Malaysia,MYS,2017,corpus uteri cancer,0.81673867
+Malaysia,MYS,2017,kidney cancer,0.6655924
+Malaysia,MYS,2017,oesophagus cancer,0.6053017
+Malaysia,MYS,2017,melanoma and other,0.48231706
+Malaysia,MYS,2017,prostate cancer,1.6740471
+Malaysia,MYS,2017,thyroid cancer,0.49761987
+Malaysia,MYS,2017,testicular cancer,0.11509896
+Malaysia,MYS,2017,"trachea, bronchus, lung cancers",8.52658
+Malaysia,MYS,2017,mouth and oropharynx cancers,2.3792744
+Malaysia,MYS,2017,ovary cancer,1.1796857
+Malaysia,MYS,2017,larynx cancer,0.25036478
+Malaysia,MYS,2017,gallbladder and biliary tract cancer,0.46752355
+Malaysia,MYS,2017,cervix uteri cancer,1.1618723
+Malaysia,MYS,2017,stomach cancer,1.4147292
+Malaysia,MYS,2017,brain and nervous system cancers,0.63157934
+Malaysia,MYS,2017,liver cancer,4.1476474
+Malaysia,MYS,2018,bladder cancer,0.6994817
+Malaysia,MYS,2018,colon and rectum cancers,7.750719
+Malaysia,MYS,2018,pancreas cancer,2.050657
+Malaysia,MYS,2018,breast cancer,6.7582994
+Malaysia,MYS,2018,corpus uteri cancer,0.9561681
+Malaysia,MYS,2018,kidney cancer,0.8534178
+Malaysia,MYS,2018,oesophagus cancer,0.74755424
+Malaysia,MYS,2018,melanoma and other,0.49820927
+Malaysia,MYS,2018,prostate cancer,1.9128348
+Malaysia,MYS,2018,thyroid cancer,0.71718967
+Malaysia,MYS,2018,testicular cancer,0.12953395
+Malaysia,MYS,2018,"trachea, bronchus, lung cancers",10.264258
+Malaysia,MYS,2018,mouth and oropharynx cancers,2.6226442
+Malaysia,MYS,2018,ovary cancer,1.5393684
+Malaysia,MYS,2018,larynx cancer,0.36140728
+Malaysia,MYS,2018,gallbladder and biliary tract cancer,0.5278342
+Malaysia,MYS,2018,cervix uteri cancer,1.3912133
+Malaysia,MYS,2018,stomach cancer,1.8970921
+Malaysia,MYS,2018,brain and nervous system cancers,0.9899389
+Malaysia,MYS,2018,liver cancer,5.498269
+Malaysia,MYS,2019,bladder cancer,0.64940697
+Malaysia,MYS,2019,colon and rectum cancers,6.5522375
+Malaysia,MYS,2019,pancreas cancer,1.9463282
+Malaysia,MYS,2019,breast cancer,6.160151
+Malaysia,MYS,2019,corpus uteri cancer,0.9174575
+Malaysia,MYS,2019,kidney cancer,0.9052372
+Malaysia,MYS,2019,oesophagus cancer,0.6511448
+Malaysia,MYS,2019,melanoma and other,0.45282483
+Malaysia,MYS,2019,prostate cancer,1.7170426
+Malaysia,MYS,2019,thyroid cancer,0.5559196
+Malaysia,MYS,2019,testicular cancer,0.13677263
+Malaysia,MYS,2019,"trachea, bronchus, lung cancers",9.143009
+Malaysia,MYS,2019,mouth and oropharynx cancers,2.2415986
+Malaysia,MYS,2019,ovary cancer,1.3124874
+Malaysia,MYS,2019,larynx cancer,0.2922705
+Malaysia,MYS,2019,gallbladder and biliary tract cancer,0.43580997
+Malaysia,MYS,2019,cervix uteri cancer,1.420802
+Malaysia,MYS,2019,stomach cancer,1.495736
+Malaysia,MYS,2019,brain and nervous system cancers,0.8636355
+Malaysia,MYS,2019,liver cancer,4.785597
+Malaysia,MYS,2020,bladder cancer,0.68390954
+Malaysia,MYS,2020,colon and rectum cancers,7.4817038
+Malaysia,MYS,2020,pancreas cancer,2.0999453
+Malaysia,MYS,2020,breast cancer,6.2364683
+Malaysia,MYS,2020,corpus uteri cancer,1.0139108
+Malaysia,MYS,2020,kidney cancer,0.8836462
+Malaysia,MYS,2020,oesophagus cancer,0.6256571
+Malaysia,MYS,2020,melanoma and other,0.4547529
+Malaysia,MYS,2020,prostate cancer,1.8222334
+Malaysia,MYS,2020,thyroid cancer,0.537614
+Malaysia,MYS,2020,testicular cancer,0.10017097
+Malaysia,MYS,2020,"trachea, bronchus, lung cancers",9.207385
+Malaysia,MYS,2020,mouth and oropharynx cancers,2.3384488
+Malaysia,MYS,2020,ovary cancer,1.3830924
+Malaysia,MYS,2020,larynx cancer,0.21266122
+Malaysia,MYS,2020,gallbladder and biliary tract cancer,0.526511
+Malaysia,MYS,2020,cervix uteri cancer,1.3560328
+Malaysia,MYS,2020,stomach cancer,1.5330132
+Malaysia,MYS,2020,brain and nervous system cancers,1.16585
+Malaysia,MYS,2020,liver cancer,5.1991916
+Malaysia,MYS,2021,bladder cancer,0.566744609
+Malaysia,MYS,2021,colon and rectum cancers,4.578924457
+Malaysia,MYS,2021,pancreas cancer,1.416431325
+Malaysia,MYS,2021,breast cancer,4.108769167
+Malaysia,MYS,2021,corpus uteri cancer,0.54633234
+Malaysia,MYS,2021,kidney cancer,0.575053519
+Malaysia,MYS,2021,oesophagus cancer,0.670781368
+Malaysia,MYS,2021,melanoma and other,0.343419918
+Malaysia,MYS,2021,prostate cancer,1.066594269
+Malaysia,MYS,2021,thyroid cancer,0.418642388
+Malaysia,MYS,2021,testicular cancer,0.070200323
+Malaysia,MYS,2021,"trachea, bronchus, lung cancers",8.358862876
+Malaysia,MYS,2021,mouth and oropharynx cancers,2.217632024
+Malaysia,MYS,2021,ovary cancer,1.070894822
+Malaysia,MYS,2021,larynx cancer,0.27598547
+Malaysia,MYS,2021,gallbladder and biliary tract cancer,0.360966108
+Malaysia,MYS,2021,cervix uteri cancer,1.137379698
+Malaysia,MYS,2021,stomach cancer,1.748766762
+Malaysia,MYS,2021,brain and nervous system cancers,0.598489544
+Malaysia,MYS,2021,liver cancer,3.890818829

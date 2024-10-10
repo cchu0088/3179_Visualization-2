@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "AAAA",
+    "data": {
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer_type_malaysia.csv"
+    },
+    "width": 800,
+    "height": 500,
+    "mark": {
+    "type": "bar",
+    "width": 20  
+    },
+    "encoding": {
+      "y": {
+        "aggregate": "sum",
+        "field": "Age-standardized deaths in both sexes per 100,000 people",
+        "type": "quantitative",
+        "axis": {"title": "Age-standardized deaths in both sexes per 100,000 people"}
+        
+      },
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "axis": {"title": "Year", "labelAngle": 0, "labelOverlap": true}
+      },
+      "color": {
+        "field": "Cancer Type",
+        "type": "nominal",
+        "sort": {
+          "field": "Age-standardized deaths in both sexes per 100,000 people",
+          "op": "sum",
+          "order": "ascending"
+        },
+        "scale": {
+          "scheme": "tableau20"
+        },
+        "legend": {"orient": "right", "title": null}
+      },
+      "order": {
+        "field": "Age-standardized deaths in both sexes per 100,000 people",
+        "aggregate": "sum",
+        "sort": "descending"
+      },
+      "tooltip": [
+        {"field": "Year", "type": "ordinal", "title": "Year"},
+        {"field": "Cancer Type", "type": "nominal", "title": "Cancer Type"},
+        {"field": "Age-standardized deaths in both sexes per 100,000 people", "type": "quantitative", "title": "Deaths per 100,000"}
+      ]
+    }
+  }

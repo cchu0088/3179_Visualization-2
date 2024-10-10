@@ -1,10 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 400,
-  "height": 400,
+  "width": 600,
+  "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer_type_malaysia.csv"
+    "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/processed_cancer_death_rate_by_age_group.csv"
   },
+  "transform": [
+    {
+      "filter": "datum.Entity == 'Malaysia'"
+    }
+  ],
   "title": "Cancer Deaths by Cancer Type in Malaysia (2000 - 2021)",
   "config": {
     "view": {
@@ -30,15 +35,20 @@
       }
     },
     "y": {
-      "field": "Cancer Type",
-      "type": "nominal",
-      "title": "Cancer Type"
+      "field": "Age",
+      "type": "ordinal",
+      "title": "Age",
+      "sort": [
+        "0-1", "1-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", 
+        "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", 
+        "80-84", "85+"
+      ]
     },
     "color": {
-      "field": "Age-standardized deaths in both sexes per 100,000 people",
+      "field": "Deaths from malignant neoplasms per 100,000 people in, both sexes",
       "type": "quantitative",
       "scale": {
-        "domain": [0, 8],  
+        "domain": [2, 270],  
         "scheme": "redpurple" 
       },
       "legend": {
@@ -47,8 +57,8 @@
     },
     "tooltip": [
       { "field": "Year", "type": "ordinal", "title": "Year" },
-      { "field": "Cancer Type", "type": "nominal", "title": "Cancer Type" },
-      { "field": "Age-standardized deaths in both sexes per 100,000 people", "type": "quantitative", "title": "Deaths per 100,000" }
+      { "field": "Age", "type": "ordinal", "title": "Age" },
+      { "field": "Deaths from malignant neoplasms per 100,000 people in, both sexes", "type": "quantitative", "title": "Deaths per 100,000" }
     ]
   }
 }

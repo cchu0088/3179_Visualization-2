@@ -4,7 +4,7 @@
     "width": 800,
     "height": 900,
     "data": {
-      "url": "https://raw.githubusercontent.com/nasupotato808/FIT3179/refs/heads/main/data/population_state.csv",
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/processed_cancer_death_rate_by_age_group.csv",
       "format": {"type": "csv"}
     },
     "params": [
@@ -13,36 +13,10 @@
         "value": 2020,
         "bind": {
           "input": "range",
-          "min": 2004,
-          "max": 2024,
+          "min": 2000,
+          "max": 2021,
           "step": 1,
           "name": "Year: "
-        }
-      },
-      {
-        "name": "State_selection",
-        "value": "Johor",
-        "bind": {
-          "input": "select",
-          "options": [
-            "Johor",
-            "Selangor",
-            "Sabah",
-            "Sarawak",
-            "W.P. Putrajaya",
-            "W.P. Kuala Lumpur",
-            "W.P. Labuan",
-            "Kedah",
-            "Kelantan",
-            "Negeri Sembilan",
-            "Pahang",
-            "Melaka",
-            "Perak",
-            "Perlis",
-            "Pulau Pinang",
-            "Terengganu"
-          ],
-          "name": "State: "
         }
       }
     ],
@@ -54,6 +28,9 @@
             "transform": [
               {
                 "filter": "datum.sex == 'female' && datum.age != 'overall' && datum.ethnicity== 'overall' && year(datum.date) == Year_selection && datum.state == State_selection"
+              },
+              {
+                "filter"
               }
             ],
             "mark": "bar",

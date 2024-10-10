@@ -10,13 +10,13 @@
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex-reshaped.csv"
     },
     "transform": [
-      {"filter": "datum.Year == 2021"},
+      {"filter": "datum.Year == 2020"},
       {"calculate": "datum.Sex == 1 ? 'Male' : 'Female'", "as": "gender"},
       {"calculate": "datum.Sex == 1 ? -datum['Age standardized deaths from malignant neoplasms 100,000 people'] : datum['Age standardized deaths from malignant neoplasms 100,000 people']", "as": "Cases per 100,000 Population"},
       {"calculate": "abs(datum['Cases per 100,000 Population'])", "as": "Positive Cases per 100,000 Population"} 
     ],
     "width": 350,
-    "height": 610,
+    "height": 1000,
     "mark": "bar",
     "encoding": {
       "y": {

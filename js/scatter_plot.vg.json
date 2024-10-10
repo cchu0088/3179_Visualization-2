@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
+    "width": 750,
     "height": 400,
     "title": "Country vs Cancer Deaths per 10,000 Population in 2021",
     "data": {
@@ -77,8 +77,7 @@
                 "#377eb8",
                 "#a65628"
               ]
-            },
-            "legend":null
+            }
           },
           "opacity": { "value": 0.6 },
           "size": { 

@@ -1,89 +1,91 @@
+body * {
+    font-family: 'Open Sans', sans-serif;
+}
 
+h1 {
+    font-weight: 900;
+    font-family: 'PT Serif', serif;
+}
 
-
-
-
-
+body {
+    background-color: lightgray;
+}
 
 .page {
-    width: 850px;
     background-color: white;
     margin: auto;
     padding: 50px;
     padding-top: 35px;
 }
 
+.section {
+    background-color: #d5dbdb;
+    box-shadow: 8px 8px 12px #99a3a4 ;
+    border-radius: 12px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    padding: 20px; /* Add padding to the section for content spacing */
+}
+
+.section-intermediate {
+    background-color: rgb(208, 205, 211);
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    margin-top: 20px; /* Space above the header */
+    padding: 5px; /* 10px top and bottom, 15px left and right */
+}
+
+.section-header {
+    background-color: #839192;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 10px; /* Space above the header */
+    margin-bottom: 10px; /* Space below the header */
+    padding: 10px; /* Padding for top and bottom spacing within the header */
+}
+
+.section-header h1 {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    line-height: 1.2; /* Adjust line height */
+    margin-top: 10px; /* Space above the header */
+    margin-bottom: 10px;
+}
+
+.vis-container {
+    width: 100%;
+    background-color: #d5dbdb; /* Match this to the section background color */
+}
+
+
 .description h2,
 h1 {
     margin-top: 0px;
 }
 
-
-.vis-container {
-    width: 100%;
+.description-right {
+    padding-left: 20px;
 }
 
 .description-left {
     padding-right: 20px;
 }
 
-.description-right {
-    padding-left: 20px;
-	margin-top: 50px;
-}
-
-
-
 .pure-g {
     margin-bottom: 40px;
 }
 
-
-#choropleth_map {
-	top:10px;
-	bottom: 100px; 
-	left: 10px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+.pure-f {
+    margin-bottom: 0;
 }
 
-#scatter_plot {
-	top:50px;
-	bottom: 100px; 
-	/* left: 100px; */
-	right: 250px;
-	/*height: 1000px;
-	width: 800px;*/
+.small-font {
+    font-size: 14px;
 }
 
-
-
-
-#donut_chart {
-	top:50px;
-	bottom: 100px; 
-	left: 50px;
-	/* right: 100px; */
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#diverging_stacked_bar_chart {
-	top:50px;
-	bottom: 100px; 
-	/* left: 100px; */
-	right: 200px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-
-#line_chart {
-	top:50px;
-	bottom: 100px; 
-	left: 10px;
-	right: 10px;
-	/*height: 1000px;
-	width: 800px;*/
-}

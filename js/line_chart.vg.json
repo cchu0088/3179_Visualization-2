@@ -1,59 +1,47 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Trends in Cancer Mortality Rates by Age Group in Malaysia (2000-2021)",
-    "description": "Cancer Death Rates by Age Group in Malaysia (2000-2021)",
+    "title": "Age-Standardized Cancer Deaths per 100,000 People in Malaysia (2000-2021)",
+    "description": "A line chart showing age-standardized deaths from malignant neoplasms in males and females per 100,000 people in Malaysia from 2000 to 2021.",
     "data": {
-        "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer-death-rate-by-age-group-malaysia-new.csv"
-    },
-    "width":"container",
-    "params": [
-        {
-            "name": "age_group_highlight",
-            "select": {
-                "type": "point",
-                "fields": ["Age"]
-            },
-            "bind": "legend"
-        }
-    ],
-    "mark": "line",
-    "encoding": {
-        "x": {
-            "field": "Year",
-            "type": "ordinal",
-            "axis": {"title": "Year", "labelAngle": 0, "labelOverlap": true}
-        },
-        "y": {
-            "field": "Deaths from malignant neoplasms per 100,000 people in, both sexes",
-            "type": "quantitative",
-            "axis": {"title": "Deaths per 100,000"},
-            "scale": { "type": "linear", "domain": [0, 1500] }  
-        },
-        "color": {
-            "field": "Age",
-            "type": "nominal",
-            "scale": {
-                "domain": ["less than 1", "1 to 19", "20 to 39", "40 to 59", "60 to 79", "over 80"],
-                "range": ["#189bcc", "#f42069", "#0e5d7a", "#f97012", "#f9e312", "#742790"]
-            },
-            "legend": {
-                "title": "Age Group",
-                "orient": "top"              
-            }
-        },
-        "opacity"  : { 
-        "condition"  : {"param": "age_group_highlight","value"  :  0.6  }, 
-        "value"  :  0.2 
-        },
-        "tooltip": [
-            {"field": "Year", "type": "ordinal", "title": "Year"},
-            {"field": "Age", "type": "nominal", "title": "Age Group"},
-            {"field": "Deaths from malignant neoplasms per 100,000 people in, both sexes", "type": "quantitative", "title": "Deaths per 100,000", "format": ".2f"}
-        ]
+      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex-reshaped.csv"
     },
     "transform": [
+      {"filter": "datum.Entity == 'Malaysia'"},
+      {"calculate": "datum.Sex == 1 ? 'Male' : 'Female'", "as": "gender"}
+    ],
+    "width": 600,
+    "height": 400,
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year",
+        "axis": {"format": "%Y"}
+      },
+      "y": {
+        "field": "Age standardized deaths from malignant neoplasms 100,000 people",
+        "type": "quantitative",
+        "title": "Cancer deaths per 100,000 people"
+      },
+      "color": {
+        "field": "gender",
+        "type": "nominal",
+        "scale": {"range": ["#2c6fc3", "#becc41"]},
+        "title": "Gender"
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
         {
-            "filter": "datum.Year >= 2000 && datum.Year <= 2020"
-        }
-    ]
-}
+          "field": "Age standardized deaths from malignant neoplasms 100,000 people",
+          "type": "quantitative",
+          "title": "Deaths per 100,000",
+          "format": ".2f"
+        },
+        {"field": "gender", "type": "nominal", "title": "Gender"}
+      ]
+    },
+    "config": {
+      "view": {"stroke": null}
+    }
+  }

@@ -68,7 +68,7 @@
           },
           "legend" : {"orient": "none", "legendX": 200, "legendY": 5   }
         },
-    "opacity": { "value": 0.8 },
+    "opacity": { "value": 1 },
     "tooltip": [
       { "field": "Continent", "type": "nominal", "title": "Continent" },
       { 

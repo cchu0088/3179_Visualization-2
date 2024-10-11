@@ -31,7 +31,48 @@
           "order": "ascending"
         },
         "scale": {
-          "scheme": "tableau20"
+          "domain": [
+            "testicular cancer",
+            "larynx cancer",
+            "corpus uteri cancer",
+            "kidney cancer",
+            "melanoma and other",
+            "thyroid cancer",
+            "gallbladder and biliary tract cancer",
+            "cervix uteri cancer",
+            "bladder cancer",
+            "brain and nervous system cancers",
+            "oesophagus cancer",
+            "ovary cancer",
+            "pancreas cancer",
+            "prostate cancer",
+            "stomach cancer",
+            "mouth and oropharynx cancers",
+            "liver cancer",
+            "breast cancer",
+            "colon and rectum cancers",
+            "trachea, bronchus, lung cancers"
+          ],
+          "range": [
+            "#66C2A5",  
+            "#FC8D62",  
+            "#8DA0CB",  
+            "#E78AC3",  
+            "#FFD92F",  
+            "#E5C494",  
+            "#B3B3B3",  
+            "#FF69B4",  
+            "#4DBBD5",  
+            "#6F9C55",  
+            "#D95F02",  
+            "#7570B3",  
+            "#2B8CBE",  
+            "#D9D9D9",  
+            "#A6DBA0",  
+            "#EAB39B",  
+            "#F2A900",  
+            "#B4B4B4"   
+        ]
         },
         "legend": {"orient": "right", "title": null}
       },

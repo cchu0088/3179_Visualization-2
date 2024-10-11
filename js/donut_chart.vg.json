@@ -1,7 +1,6 @@
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Total Cancer Deaths per 10,000 Population in 2021 by Continent",
   "width": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/continent_death_cancer.csv"
@@ -17,7 +16,7 @@
           {
               "op": "sum",
               "field": "Cases per 10,000 Population",
-              "as": "Total Emissions for Year"
+              "as": "Total Cases per 10,000 Population for Year"
           }
       ],
       "frame": [
@@ -26,7 +25,7 @@
       ]
   },
   {
-      "calculate": "(datum['Total Pollutants (kilo tonnes)'] / datum['Total Emissions for Year']) * 100",
+      "calculate": "(datum['Cases per 10,000 Population'] / datum['Total Cases per 10,000 Population for Year']) * 100",
       "as": "Percentage"
   }
   ],

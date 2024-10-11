@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "AAAA",
     "data": {
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer_type_malaysia.csv"
     },

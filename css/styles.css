@@ -14,21 +14,19 @@ body {
 .page {
     background-color: white;
     margin: auto;
-    padding: 120px;
+    padding: 220px;
     padding-top: 35px;
 }
 
-.section {
-    background-color: #d5dbdb;
+/* .section {
+    background-color: #41b6c4;
     box-shadow: 8px 8px 12px #99a3a4 ;
     border-radius: 12px;
     border: none;
     transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 30px;
     padding: 2px;
-    /* padding: 20px;  */
-    /* Add padding to the section for content spacing */
-}
+} */
 
 .section-intermediate {
     background-color: rgb(208, 205, 211);
@@ -40,56 +38,80 @@ body {
     padding: 5px; /* 10px top and bottom, 15px left and right */
 }
 
-.section-header {
-    background-color: #839192;
-    color: white;
+/* .section-header {
+    background-color: #2c7fb8;
+    color: black;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'display';
     border-radius: 12px;
     font-size: 1.25rem;
     text-align: center;
-    margin-top: 10px; /* Space above the header */
-    margin-bottom: 10px; /* Space below the header */
-    padding: 10px; /* Padding for top and bottom spacing within the header */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    padding: 10px; 
 }
 
 .section-header h1 {
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-    line-height: 1.2; /* Adjust line height */
-    margin-top: 10px; /* Space above the header */
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.2; 
+    margin-top: 10px;
     margin-bottom: 10px;
+} */
+
+
+
+.section {
+    box-shadow: 8px 8px 12px #99a3a4 ;
+    border-radius: 12px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+
 }
+
+.section:hover {
+    box-shadow: 8px 8px 12px #2c7fb8;
+}
+
+.section-header {
+    background-color: #2c7fb8;
+    font-family: 'display';
+    border-radius: 12px;
+    font-size: 1.25rem;
+    border-radius: 12px 12px 0 0;
+}
+
+.section-body {
+    padding: 20px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .vis-container {
     width: 100%;
-    background-color: #d5dbdb; /* Match this to the section background color */
+    background-color: white; /* Match this to the section background color */
 }
 
-
-.description h2,
-h1 {
-    margin-top: 0px;
-}
-
-.description-right {
-    padding-left: 20px;
-}
-
-.description-left {
-    padding-right: 20px;
-}
 
 .pure-g {
-    margin-bottom: 40px;
-}
-
-.pure-f {
-    margin-bottom: 0;
-}
-
-.small-font {
-    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 

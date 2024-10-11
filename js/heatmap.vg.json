@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
+  "width": 800,
   "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/processed_cancer_death_rate_by_age_group.csv"
@@ -10,7 +10,6 @@
       "filter": "datum.Entity == 'Malaysia'"
     }
   ],
-  "title": "Cancer Deaths by Cancer Type in Malaysia (2000 - 2021)",
   "config": {
     "view": {
       "strokeWidth": 0,
@@ -52,8 +51,8 @@
         "scheme": "redpurple" 
       },
       "legend": {
-        "title": "Deaths per 100,000",
-        "orient": "bottom"
+        "title": "Deaths per 100,000"
+        
       }
     },
     "tooltip": [

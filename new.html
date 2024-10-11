@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Deaths from Cancer</title>
+  
+  <!-- Import Vega, Vega-Lite, and Vega-Embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+  <!-- Import Pure.css for styling -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+</head>
+<body>
+    <div class="page">
+        <div class="section">
+            <div class="section-header">
+                <div class="title-container" style="height: 100px;">
+                    <h1 style="font-size: 2.5em;">A Closer Look At Cancer</h1>
+                </div>
+            </div>
+            <div class="section-body">
+                <p style="text-align: center; font-size: 20px; font-family: serif; margin: 0 70px; line-height: 1.6; text-align: justify; padding-bottom: 15px;">
+                    <b style="font-family: serif; font-size: 28px">Cancer</b> is a disease characterized by the uncontrolled growth of 
+                    <b style="font-family: serif;color: #ec2344">abnormal cells</b>, 
+                    which can 
+                    <b style="font-family: serif;color: #ec2344">invade and damage</b> surrounding tissues and spread to other parts of the body. 
+                    As a leading cause of death worldwide, millions of people succumb to cancer each year. This visualization 
+                    explores the prevalence of cancer across different 
+                    <b style="font-family: serif; font-size: 20px">countries and regions</b>, providing insights into mortality rates and 
+                    the impact of the disease on various populations. Additionally, it examines cancer death data in 
+                    <b style="font-family: serif">Malaysia</b>, 
+                    focusing on 
+                    <b style="font-family: serif">age groups, cancer types, and sex</b>, to gain a better understanding of the global burden of this 
+                    disease and the regions most affected by it.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="title-container" style="height: 80px;">
+                    <h2 style="font-size: 33px;">Cancer Deaths Worldwide: A Yearly Overview</h2>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <div style="text-align: center;">
+                            <div id="vis1" class="vis-container"></div>
+                        </div>
+                        <div>
+                            <p style="text-align: center; font-size: 20px; font-family: serif; margin: 0 70px; line-height: 1.6; text-align: justify; padding-top: 30px;">
+                                Notably in 2021, <b style="font-family: serif;">Japan</b> recorded the 
+                                <b style="font-family: serif;">highest cancer death rate in Asia</b>, with an alarming 
+                                <b style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ec2344">35.25</b> deaths per 10,000 population. 
+                                In contrast, <b style="font-family: serif;">Malaysia</b> reported a significantly lower cancer death rate of 
+                                <b style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ec2344">8.98</b> deaths per 10,000 population. 
+                                This visualization effectively highlights the 
+                                <b style="font-family: serif;">disparities in cancer mortality rates</b>, shedding light on the 
+                                varying impact of cancer across 
+                                <b style="font-family: serif;">different regions</b>.                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="section-header">
+                <div class="title-container" style="height: 80px;">
+                    <h2>Worldwide Cancer Death Rates: Regional and Population Insights</h2>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <div style="text-align: center;">
+                            <div id="vis2" class="vis-container"></div>
+                        </div>
+                        <div>
+                            <p style="text-align: center; font-size: 20px; font-family: serif; margin: 0 70px; line-height: 1.6; text-align: justify; padding-top: 20px;">
+                                The <b style="font-family: serif;">size of each circle</b> represents the 
+                                population of the respective country, 
+                                with larger circles indicating <b style="font-family: serif;">higher populations.</b>
+                                <br> In 2021, <b style="font-family: serif;">Europe</b> exhibited 
+                                the <b style="font-family: serif;">highest overall cancer death rate</b> among continents. 
+                                <b style="font-family: serif;">Monaco</b>, in particular, stood out with the 
+                                highest cancer death rate, recording 
+                                **<b style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ec2344">78.86</b> 
+                                deaths per 10,000 population**, showing a significant increase in deaths from 2000 to 2021.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-1-2">
+                        <div style="padding-top: 60px; text-align: center;">
+                            <div id="vis3" class="vis-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-1-2">
+                        <div>
+                            <p style="text-align: center; font-size: 20px; font-family: serif; margin: 20px; margin-right: 70px; line-height: 1.6; text-align: justify; padding-top: 100px;">
+                                Prominently in 2021, <b style="font-family: serif;">Europe</b> accounted for 
+                                the <b style="font-family: serif;">highest cancer death rate</b>, 
+                                comprising 
+                                <b style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ec2344">29.91%</b> 
+                                of the global total. 
+                                <br><br><b style="font-family: serif;">Oceania</b> followed as the 
+                                <b style="font-family: serif;">second-highest</b>, 
+                                with 
+                                <b style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ec2344">18.78%</b> of 
+                                cancer deaths per 10,000 population. On the other hand, 
+                                <br><br><b style="font-family: serif;">Africa</b> 
+                                reported the <b style="font-family: serif;">lowest rate</b>, contributing only 
+                                <b style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ec2344">6.21%</b> to the total cancer deaths.                          
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="title-container" style="height: 80px;">
+                    <h2>Trends in Cancer Death Rates by Age Group in Malaysia (2000-2021)</h2>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <div style="text-align: center;">
+                            <div id="vis4" class="vis-container"></div>
+                        </div>
+                        <div>
+                            <p style="text-align: center; font-size: 20px; font-family: serif; margin: 0 70px; line-height: 1.6; text-align: justify; padding-top: 30px;">
+                                It is remarkable to observe 
+                                <b style="font-family: serif;">a significant trend</b> in cancer mortality, 
+                                particularly as individuals reach 
+                                <b style="font-family: serif;">the age of 50</b>, where the death rate 
+                                <b style="font-family: serif;color: #ec2344">begins to increase markedly</b>. 
+                                This trend becomes even more pronounced 
+                                for those 
+                                <b style="font-family: serif;">aged 50 and above</b>, with rates escalating significantly as age 
+                                progresses into the 
+                                <b style="font-family: serif;">85+ category</b>. Notably, the 
+                                <b style="font-family: serif;color: #ec2344">highest cancer death rate</b> 
+                                is observed in 
+                                <b style="font-family: serif;">2018 for the age group of 85 and older</b>, highlighting the 
+                                critical impact of age on cancer mortality rates.                       
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="title-container" style="height: 80px;">
+                    <h2>Cancer Mortality in Malaysia: A Comparative Analysis by Type (2000-2021)</h2>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <div style="text-align: center;">
+                            <div id="vis5" class="vis-container"></div>
+                        </div>
+                        <div>
+                            <p style="text-align: center; font-size: 20px; font-family: serif; margin: 0 70px; line-height: 1.6; text-align: justify; padding-top: 30px;">
+                                The data reveals that the <b style="font-family: serif;">first five highest </b>cancer mortality rates 
+                                in Malaysia are associated with 
+                                <b style="font-family: serif;">mouth and oropharynx cancers, liver cancer, breast cancer, 
+                                colon and rectum cancers, and 
+                                trachea, bronchus, and lung cancers</b>. Notably, trachea, bronchus, and lung cancers consistently 
+                                recorded <b style="font-family: serif;color: #ec2344">the highest death rates among these types</b>, 
+                                maintaining this position throughout the 
+                                analyzed years. This trend underscores the persistent impact of 
+                                <b style="font-family: serif;">lung-related cancers</b> on 
+                                mortality rates in Malaysia, reflecting ongoing public health challenges and the pressing 
+                                need for continued awareness and intervention strategies to address these critical health issues.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="title-container" style="height: 80px;">
+                    <h2>Cancer Death Rates in Malaysia: A Gender Perspective (2000-2021)</h2>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <div style="text-align: center;">
+                            <div id="vis6" class="vis-container"></div>
+                        </div>
+                        <div>
+                            <p style="text-align: center; font-size: 20px; font-family: serif; margin: 0 70px; line-height: 1.6; text-align: justify; padding-top: 30px;">
+                                The line chart above shows the trend in cancer death rates over time by sex. The chart reveals a steady increase in cancer death rates from 2000 to 2021.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+  
+
+
+  
+  
+
+
+
+  <script type="text/javascript">
+    var specVis1 = "js/choropleth_map.vg.json";
+    var specVis2 = "js/scatter_plot.vg.json";
+    var specVis3 = "js/donut_chart.vg.json";
+    var specVis4 = "js/heatmap.vg.json";
+    var specVis5 = "js/stacked_bar_chart.vg.json";
+    var specVis6 = "js/line_chart.vg.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false });
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+  
+</body>
+</html>

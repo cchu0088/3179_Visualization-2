@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Global Cancer Deaths (2000–2021)",
     "width": 800,
     "height": 400,
     "projection": {"type": "equalEarth"},
@@ -92,6 +91,33 @@
             "format": ".2f"
           }
         ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/data/countryInfo.csv"
+            },
+            "key": "name",
+            "fields": ["latitude", "longitude"]
+          }
+        }
+      ],
+      "mark": {"type": "text"},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "text": {"field": "properties.NAME", "type": "nominal"},
+        "opacity": {
+          "condition": {
+            "test": "datum['properties.NAME'] == 'China' || datum['properties.NAME'] == 'Brazil' || datum['properties.NAME'] == 'Australia' || datum['properties.NAME'] == 'Malaysia' ||  datum['properties.NAME'] == 'Yemen' ||  datum['properties.NAME'] == 'United States of America'",
+            "value": 1
+          },
+          "value": 0
+        }
       }
     }
   ]

@@ -80,7 +80,15 @@
           "scale": {"type": "threshold",
             "domain": [5, 10, 20, 30],
             "range": ["#fdbb84","#fc8d59","#ef6548","#d7301f","#990000"]},
-          "legend": {"title": "Deaths per 10,000 Population", "orient": "bottom"} 
+          "legend": {
+            "title": "Deaths per 10,000 Population", 
+            "orient": "bottom",
+            "labelFont": "Verdana",
+            "labelFontSize": 11,
+            "titleFont": "Verdana",
+            "titleFontSize": 12,
+            "titleLimit": 300
+          } 
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
@@ -106,7 +114,14 @@
           }
         }
       ],
-      "mark": {"type": "text"},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},

@@ -1,45 +1,106 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A line chart showing age-standardized deaths from malignant neoplasms in males and females per 100,000 people in Malaysia from 2000 to 2021.",
-    "data": {
-      "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex-reshaped.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing age-standardized deaths from malignant neoplasms in males and females per 100,000 people in Malaysia from 2000 to 2021.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/death-rate-from-cancer-by-sex-reshaped.csv"
+  },
+  "transform": [
+    {"filter": "datum.Entity == 'Malaysia'"},
+    {"calculate": "datum.Sex == 1 ? 'Male' : 'Female'", "as": "gender"}
+  ],
+  "width": 800,
+  "height": 400,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "labelAngle": 0,
+        "labelFont": "Verdana",
+        "labelFontSize": 11,
+        "titleFont": "Verdana",
+        "titleFontSize": 12
+      }
     },
-    "transform": [
-      {"filter": "datum.Entity == 'Malaysia'"},
-      {"calculate": "datum.Sex == 1 ? 'Male' : 'Female'", "as": "gender"}
-    ],
-    "width": 800,
-    "height": 400,
-    "mark": "line",
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "ordinal",
-        "title": "Year"
-      },
-      "y": {
-        "field": "Age standardized deaths from malignant neoplasms 100,000 people",
-        "type": "quantitative",
-        "title": "Cancer deaths per 100,000 people"
-      },
-      "color": {
-        "field": "gender",
-        "type": "nominal",
-        "scale": {"range": ["#2c6fc3", "#becc41"]},
-        "title": "Gender"
-      },
-      "tooltip": [
-        {"field": "Year", "type": "ordinal", "title": "Year"},
+    "y": {
+      "field": "Age standardized deaths from malignant neoplasms 100,000 people",
+      "type": "quantitative",
+      "title": "Cancer deaths per 100,000 people",
+      "axis": {
+        "labelFont": "Verdana",
+        "labelFontSize": 11,
+        "titleFont": "Verdana",
+        "titleFontSize": 12
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3
+      }
+      ,
+      "encoding": {
+        "color": {
+          "field": "gender",
+          "type": "nominal",
+          "scale": {"range": ["#2785b4", "#ffdf00"]},
+          "title": "Gender",
+          "sort": ["Male", "Female"],
+          "legend": {
+            "labelFont": "Verdana",
+            "labelFontSize": 11,
+            "titleFontSize": 12,
+            "titleFont": "Verdana",
+            "rowPadding": 5
+          }
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal", "title": "Year"},
+          {
+            "field": "Age standardized deaths from malignant neoplasms 100,000 people",
+            "type": "quantitative",
+            "title": "Deaths per 100,000",
+            "format": ".2f"
+          },
+          {"field": "gender", "type": "nominal", "title": "Gender"}
+        ]
+      }
+    },
+    {
+      "transform": [
         {
-          "field": "Age standardized deaths from malignant neoplasms 100,000 people",
-          "type": "quantitative",
-          "title": "Deaths per 100,000",
+          "window": [
+            {"op": "max", "field": "Age standardized deaths from malignant neoplasms 100,000 people", "as": "MaxDeaths"},
+            {"op": "first_value", "field": "Year", "as": "MaxYear"}
+          ],
+          "groupby": ["gender"],
+          "frame": [null, null]
+        },
+        {
+          "filter": "datum['Age standardized deaths from malignant neoplasms 100,000 people'] == datum.MaxDeaths"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {"field": "Age standardized deaths from malignant neoplasms 100,000 people", "type": "quantitative"},
+        "text": {
+          "field": "MaxDeaths", 
+          "type": "quantitative", 
           "format": ".2f"
         },
-        {"field": "gender", "type": "nominal", "title": "Gender"}
-      ]
-    },
-    "config": {
-      "view": {"stroke": null}
+        "color": {"value": "black"}
+      }
     }
-  }
+  ]
+}

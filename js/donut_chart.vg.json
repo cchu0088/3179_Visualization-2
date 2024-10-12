@@ -99,7 +99,12 @@
   "layer": [{
     "mark": {"type": "arc", "innerRadius": 100, "outerRadius": 160}
   }, {
-    "mark": {"type": "text", "radius": 190},
+    "mark": {
+      "type": "text", 
+      "radius": 190,
+      "font": "Verdana",
+      "fontSize": 12
+  },
     "encoding": {
       "text": {"field": "Continent", "type": "nominal"}
     }

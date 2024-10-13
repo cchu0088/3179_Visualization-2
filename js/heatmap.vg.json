@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/processed_cancer_death_rate_by_age_group.csv"

@@ -3,7 +3,7 @@
     "data": {
       "url": "https://raw.githubusercontent.com/cchu0088/3179_Visualization-2/main/data/cancer_type_malaysia.csv"
     },
-    "width": 800,
+    "width": "container",
     "height": 500,
     "mark": {
     "type": "bar",
@@ -94,7 +94,8 @@
           "labelFontSize": 11,
           "titleFont": "Verdana",
           "titleFontSize": 12,
-          "rowPadding": 10
+          "rowPadding": 10,
+          "labelLimit": 300
             }
       },
       "order": {

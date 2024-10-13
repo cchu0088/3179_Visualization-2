@@ -67,7 +67,7 @@
             "trachea, bronchus, lung cancers"
           ],
           "range": [
-            "#1f78b4 ",  
+            "#808e90",  
             "#FF7F50",  
             "#8DA0CB",  
             "#E78AC3",  
@@ -83,8 +83,8 @@
             "#D9D9D9",  
             "#6a3d9a",  
             "#33a02c",  
-            "#f7f421",  
-            "#808e90"   
+            "#029797",  
+            "#6166b8"   
         ]
         },
         "legend": {
@@ -106,7 +106,7 @@
       "tooltip": [
         {"field": "Year", "type": "ordinal", "title": "Year"},
         {"field": "Cancer Type", "type": "nominal", "title": "Cancer Type"},
-        {"field": "Age-standardized deaths in both sexes per 100,000 people", "type": "quantitative", "title": "Deaths per 100,000"}
+        {"field": "Age-standardized deaths in both sexes per 100,000 people", "type": "quantitative", "title": "Deaths per 100,000 population", "format": ".2f"}
       ]
     }
   }

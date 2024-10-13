@@ -118,7 +118,7 @@
             { 
               "field": "Cases per 10,000 Population", 
               "type": "quantitative", 
-              "title": "Cases per 10,000 Population", 
+              "title": "Cases per 10,000 population", 
               "format": ".2f" 
             } 
           ]

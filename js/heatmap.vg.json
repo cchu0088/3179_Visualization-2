@@ -73,7 +73,7 @@
     "tooltip": [
       { "field": "Year", "type": "ordinal", "title": "Year" },
       { "field": "Age", "type": "ordinal", "title": "Age" },
-      { "field": "Deaths from malignant neoplasms per 100,000 people in, both sexes", "type": "quantitative", "title": "Deaths per 100,000" }
+      { "field": "Deaths from malignant neoplasms per 100,000 people in, both sexes", "type": "quantitative", "title": "Deaths per 100,000 population", "format": ".2f"}
     ]
   }
 }
